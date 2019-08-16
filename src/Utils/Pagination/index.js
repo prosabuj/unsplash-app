@@ -17,7 +17,7 @@ const Pagination = ({ images, nextPage, hasMore, query }) => {
       }}
       hasMore={hasMore}
       loader={<Loader />}
-      className="row text-center text-lg-left"
+      className="row grid"
       style={{ overflow: null, height: null }}
       endMessage={
         <p style={{ textAlign: "center" }}>
