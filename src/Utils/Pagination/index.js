@@ -17,11 +17,11 @@ const Pagination = ({ images, nextPage, hasMore, query }) => {
       hasMore={hasMore}
       loader={
         <div
-          class="spinner-grow text-success"
+          className="spinner-grow text-success"
           style={{ margin: "0 auto" }}
           role="status"
         >
-          <span class="sr-only">Loading...</span>
+          <span className="sr-only">Loading...</span>
         </div>
       }
       className="row grid"
