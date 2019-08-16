@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
 import ImageGrid from "../../Components/Regular/ImageGrid";
-import Loader from "../../Components/Regular/Loader";
 
 const Pagination = ({ images, nextPage, hasMore, query }) => {
   const [page, setPage] = useState(1);
@@ -16,14 +15,18 @@ const Pagination = ({ images, nextPage, hasMore, query }) => {
         setPage(page + 1);
       }}
       hasMore={hasMore}
-      loader={<Loader />}
+      loader={
+        <div
+          class="spinner-grow text-success"
+          style={{ margin: "0 auto" }}
+          role="status"
+        >
+          <span class="sr-only">Loading...</span>
+        </div>
+      }
       className="row grid"
       style={{ overflow: null, height: null }}
-      endMessage={
-        <p style={{ textAlign: "center" }}>
-          <b>Yay! You have seen it all</b>
-        </p>
-      }
+      endMessage={<p style={{ margin: "0 auto" }}>You have seen it all</p>}
     >
       {images.map((image, index) => (
         <ImageGrid key={index} image={image} />

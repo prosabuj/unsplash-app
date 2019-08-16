@@ -9,3 +9,27 @@
   height: 100%;
   width: 100%;
 }
+
+.uploader-small-avatar {
+  position: absolute;
+  bottom: 15%;
+  left: 8%;
+}
+
+.uploader-avatar-name {
+  position: absolute;
+  color: #fff;
+  bottom: 11%;
+  left: 18%;
+}
+
+.image-download-button {
+  position: absolute;
+  bottom: 11%;
+  right: 10%;
+}
+
+.image-download-button p a {
+  color: #fff;
+  text-decoration: none;
+}

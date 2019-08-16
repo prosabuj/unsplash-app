@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
+import AfterHover from "./AfterHover";
 
 const ImageGrid = ({ image }) => {
+  const [hover, setHover] = useState(false);
   return (
-    <div className="col-md-4 col-sm-6 grid-item">
+    <div
+      className="col-md-4 col-sm-6 grid-item"
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
+    >
       <div className="unsplash-photo" style={{ background: image.color }}>
         <div className="thumbnail-size">
           <img
@@ -12,6 +18,7 @@ const ImageGrid = ({ image }) => {
           />
         </div>
       </div>
+      {hover ? <AfterHover ImageData={image} /> : null}
     </div>
   );
 };
