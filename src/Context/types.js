@@ -1,0 +1,13 @@
+export const GET_UNSPLASH = "GET_UNSPLASH";
+export const UNSPLASH_ERROR = "UNSPLASH_ERROR";
+export const NEXT_PAGE_UNSPLASH = "NEXT_PAGE_UNSPLASH";
+
+export const GET_SEARCH_ALL = "GET_SEARCH_ALL";
+export const GET_SEARCH = "GET_SEARCH";
+export const SEARCH_ERROR = "SEARCH_ERROR";
+export const NEXT_PAGE_SEARCH_PHOTOS = "NEXT_PAGE_SEARCH_PHOTOS";
+
+export const CLEAR_ERROR = "CLEAR_ERROR";
+
+export const SET_ALERT = "SET_ALERT";
+export const REMOVE_ALERT = "REMOVE_ALERT";

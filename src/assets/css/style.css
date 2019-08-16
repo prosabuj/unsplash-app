@@ -1,0 +1,55 @@
+.thumb-post img {
+  object-fit: none;
+  object-position: center;
+  width: 100%;
+  max-height: 250px;
+  margin-bottom: 1rem;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.uploader-small-avatar {
+  position: absolute;
+  bottom: 7%;
+  left: 10%;
+}
+
+.uploader-avatar-name {
+  position: absolute;
+  color: #fff;
+  bottom: 9%;
+  left: 18%;
+}
+
+.image-download-button {
+  position: absolute;
+  bottom: 9%;
+  right: 10%;
+}
+
+.image-download-button p a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Single User Page */
+
+.masthead {
+  height: 500px;
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.user-address {
+  color: rgb(90, 90, 90);
+}
+
+.ua {
+  margin: 5px;
+}
