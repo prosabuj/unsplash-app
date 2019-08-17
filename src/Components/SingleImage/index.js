@@ -14,8 +14,11 @@ const SingleImage = ({ unsplash }) => {
             className="rounded mx-auto d-block "
           />
           <div className="text-center">
-            <Link to={`/@${unsplash.user.username}`}>
-              <h2>{unsplash.user.name}</h2>
+            <Link
+              to={`/@${unsplash.user.username}`}
+              style={{ textDecoration: "none" }}
+            >
+              <h2 className="user-name">{unsplash.user.name}</h2>
             </Link>
             <p className="lead">{unsplash.user.bio}</p>
           </div>

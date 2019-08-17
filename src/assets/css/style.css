@@ -33,3 +33,13 @@
   color: #fff;
   text-decoration: none;
 }
+
+/* user page*/
+
+.user-name {
+  color: #4e4e4e;
+}
+
+.user-name:hover {
+  text-decoration: none;
+}

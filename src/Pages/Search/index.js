@@ -11,9 +11,10 @@ const Search = ({ match }) => {
   return (
     <div>
       <h1>{query.replace("-", " ").trim()} Pictures</h1>
-      <p>
-        {unsplashsall.total} free {query.replace("-", " ")} pictures
+      <p className="lead">
+        {unsplashsall.total} free "{query.replace("-", " ")}" pictures
       </p>
+      <hr />
       <SearchComponent query={query} />
     </div>
   );
