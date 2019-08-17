@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/unsplash-app/static/css/main.dedf8c0f.chunk.css",
+    "main.js": "/unsplash-app/static/js/main.b155e990.chunk.js",
+    "main.js.map": "/unsplash-app/static/js/main.b155e990.chunk.js.map",
+    "runtime~main.js": "/unsplash-app/static/js/runtime~main.66a63806.js",
+    "runtime~main.js.map": "/unsplash-app/static/js/runtime~main.66a63806.js.map",
+    "static/js/2.15ec95c8.chunk.js": "/unsplash-app/static/js/2.15ec95c8.chunk.js",
+    "static/js/2.15ec95c8.chunk.js.map": "/unsplash-app/static/js/2.15ec95c8.chunk.js.map",
+    "index.html": "/unsplash-app/index.html",
+    "precache-manifest.d89e4f83f8d25963c57ac700f03c21ff.js": "/unsplash-app/precache-manifest.d89e4f83f8d25963c57ac700f03c21ff.js",
+    "service-worker.js": "/unsplash-app/service-worker.js",
+    "static/css/main.dedf8c0f.chunk.css.map": "/unsplash-app/static/css/main.dedf8c0f.chunk.css.map",
+    "static/media/style.css": "/unsplash-app/static/media/banner.9a8a685c.jpg",
+    "static/media/location.svg": "/unsplash-app/static/media/location.86d2072d.svg",
+    "static/media/web.svg": "/unsplash-app/static/media/web.405675b4.svg"
+  }
+}
