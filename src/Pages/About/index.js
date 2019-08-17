@@ -7,9 +7,10 @@ const About = () => {
         <div className="col-md-8 p-lg-5 mx-auto my-5">
           <h1 className="display-4 font-weight-normal">Unsplash Photos App</h1>
           <p className="lead font-weight-normal">
-            Contrary to popular belief, Lorem Ipsum is not simply random text.
-            It has roots in a piece of classical Latin literature from 45 BC,
-            making it over 2000 years old.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
           </p>
           <hr />
           <h3 className="font-weight-normal">Version: 1.0.0</h3>

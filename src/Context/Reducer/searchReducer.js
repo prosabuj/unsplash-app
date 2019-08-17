@@ -22,7 +22,7 @@ export default (state, action) => {
     case SEARCH_ERROR:
       return {
         ...state,
-        error: state.error,
+        error: "Something Went Wrong, Please Reload This Page",
         loading: false
       };
     case CLEAR_ERROR:

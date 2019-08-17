@@ -21,7 +21,7 @@ const UnsplashState = ({ children }) => {
       );
       dispatch({ type: GET_UNSPLASH, payload: response.data });
     } catch (err) {
-      dispatch({ type: UNSPLASH_ERROR, payload: err.message });
+      dispatch({ type: UNSPLASH_ERROR });
 
       setTimeout(() => {
         dispatch({ type: CLEAR_ERROR });

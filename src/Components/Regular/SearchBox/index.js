@@ -25,11 +25,17 @@ const Search = () => {
             onChange={searchInput}
             placeholder="Search Photos"
           />
-          <Link to={`/search/photos/${search.replace(/\s+/g, "-").trim()}`}>
-            <div className="input-group-append">
-              <input type="submit" value="Search" className="btn btn-primary" />
-            </div>
-          </Link>
+          {search.length >= 1 && (
+            <Link to={`/search/photos/${search.replace(/\s+/g, "-").trim()}`}>
+              <div className="input-group-append">
+                <input
+                  type="submit"
+                  value="Search"
+                  className="btn btn-primary"
+                />
+              </div>
+            </Link>
+          )}
         </div>
       </form>
     </div>

@@ -9,6 +9,7 @@ export const GET_SEARCH = "GET_SEARCH";
 export const SEARCH_ERROR = "SEARCH_ERROR";
 
 export const GET_USER = "GET_USER";
+export const GET_USER_PHOTOS = "GET_USER_PHOTOS";
 export const USER_ERROR = "USER_ERROR";
 
 export const CLEAR_ERROR = "CLEAR_ERROR";

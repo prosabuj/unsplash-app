@@ -12,7 +12,7 @@ export default (state, action) => {
       return {
         ...state,
         loading: false,
-        error: action.payload
+        error: "Something Went Wrong, Please Reload This Page"
       };
     case CLEAR_ERROR:
       return {

@@ -28,7 +28,7 @@ const SearchState = props => {
       dispatch({ type: GET_SEARCH_ALL, payload: response.data });
       dispatch({ type: GET_SEARCH, payload: response.data.results });
     } catch (err) {
-      dispatch({ type: SEARCH_ERROR, payload: err.message });
+      dispatch({ type: SEARCH_ERROR });
 
       setTimeout(() => {
         dispatch({ type: CLEAR_ERROR });

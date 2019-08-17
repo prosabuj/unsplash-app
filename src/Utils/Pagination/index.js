@@ -26,7 +26,6 @@ const Pagination = ({ images, nextPage, hasMore, query }) => {
       }
       className="row grid"
       style={{ overflow: null, height: null }}
-      endMessage={<p style={{ margin: "0 auto" }}>You have seen it all</p>}
     >
       {images.map((image, index) => (
         <ImageGrid key={index} image={image} />

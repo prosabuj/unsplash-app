@@ -19,7 +19,7 @@ const UniversalState = props => {
       const response = await API.get(`/photos/${imageId}`);
       dispatch({ type: GET_SINGLE_IMAGE, payload: response.data });
     } catch (err) {
-      dispatch({ type: SINGLE_IMAGE_ERROR, payload: err.message });
+      dispatch({ type: SINGLE_IMAGE_ERROR });
 
       setTimeout(() => {
         dispatch({ type: CLEAR_ERROR });

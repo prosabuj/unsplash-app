@@ -1,6 +1,11 @@
 import React from "react";
+import Pagination from "../../Utils/Pagination";
+import LocationIcon from "../../assets/images/user/location.svg";
+import WebIcon from "../../assets/images/user/web.svg";
+import Loader from "../Regular/Loader";
 
-const User = ({ user }) => {
+const User = ({ user, getUserPhotos, query, loading, userphotos }) => {
+  const hasMoreGen = user.total_photos <= userphotos.length ? false : true;
   return (
     <div className=" container mt-5">
       <div className="row">
@@ -14,8 +19,10 @@ const User = ({ user }) => {
         <div className="col-md-8">
           <h2>{user.name}</h2>
           <div className="row user-address">
-            <i className="fas fa-map-marker-alt" /> {user.location}
-            <i className="fas fa-link" /> {user.portfolio_url}
+            <img src={LocationIcon} alt="Location" className="user-icon" />{" "}
+            {user.location}
+            <img src={WebIcon} alt="Web" className="user-icon" />{" "}
+            {user.portfolio_url}
           </div>
           <p className="lead">{user.bio}</p>
           <h4>Interests</h4>
@@ -50,6 +57,17 @@ const User = ({ user }) => {
         </div>
         <div className="offset-sm-5" />
       </div>
+      <hr />
+      {loading ? (
+        <Loader />
+      ) : (
+        <Pagination
+          images={userphotos}
+          nextPage={getUserPhotos}
+          hasMore={hasMoreGen}
+          query={query}
+        />
+      )}
     </div>
   );
 };

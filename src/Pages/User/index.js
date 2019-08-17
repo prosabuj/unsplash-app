@@ -5,10 +5,12 @@ import Loader from "../../Components/Regular/Loader";
 
 const User = ({ match }) => {
   const userContext = useContext(UserContext);
-  const { getUser, user, loading } = userContext;
+  const { getUser, getUserPhotos, user, loading, userphotos } = userContext;
 
   useEffect(() => {
     getUser(match.params.username);
+    userphotos.length = 0;
+    getUserPhotos(match.params.username);
     // eslint-disable-next-line
   }, []);
 
@@ -17,7 +19,15 @@ const User = ({ match }) => {
   if (loading) {
     return <Loader />;
   } else if (!isEmpty) {
-    return <UserComponent user={user} />;
+    return (
+      <UserComponent
+        user={user}
+        getUserPhotos={getUserPhotos}
+        query={match.params.username}
+        userphotos={userphotos}
+        loading={loading}
+      />
+    );
   } else {
     return (
       <div className="text-center">
