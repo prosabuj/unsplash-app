@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import AfterHover from "./AfterHover";
 
 const ImageGrid = ({ image }) => {
@@ -9,15 +10,17 @@ const ImageGrid = ({ image }) => {
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
-      <div className="unsplash-photo" style={{ background: image.color }}>
-        <div className="thumbnail-size">
-          <img
-            src={image.urls.small}
-            alt={image.alt_description}
-            className="img-fluid"
-          />
+      <Link to={`/photos/${image.id}`}>
+        <div className="unsplash-photo" style={{ background: image.color }}>
+          <div className="thumbnail-size">
+            <img
+              src={image.urls.small}
+              alt={image.alt_description}
+              className="img-fluid"
+            />
+          </div>
         </div>
-      </div>
+      </Link>
       {hover ? <AfterHover ImageData={image} /> : null}
     </div>
   );

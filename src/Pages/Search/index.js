@@ -14,7 +14,6 @@ const Search = ({ match }) => {
       <p>
         {unsplashsall.total} free {query.replace("-", " ")} pictures
       </p>
-      <p>Total Page: {unsplashsall.total_pages}</p>
       <SearchComponent query={query} />
     </div>
   );
