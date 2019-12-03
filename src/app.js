@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import UnsplashState from "./Context/State/UnsplashState";
 import SearchState from "./Context/State/SearchState";
 import UserState from "./Context/State/UserState";
@@ -19,7 +19,7 @@ const App = () => {
       <SearchState>
         <UniversalState>
           <UserState>
-            <Router>
+            <Router basename="/unsplash-app">
               <Layout>
                 <Switch>
                   <Route exact path="/" component={Home} />
