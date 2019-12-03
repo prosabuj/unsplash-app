@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/unsplash-app/precache-manifest.081823d1c70459afb1ab3dfe6d242e2a.js"
+  "/unsplash-app/precache-manifest.bbf3e9fd868742c237a42761e27ba2fb.js"
 );
 
 self.addEventListener('message', (event) => {
